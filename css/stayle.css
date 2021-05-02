@@ -1,0 +1,410 @@
+*body {
+    background-color: #fff;
+}
+header {
+    height: 700px;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+header .nav {
+    display: flex;
+    justify-content: space-between;
+}
+header .nav h1 {
+    text-transform: capitalize;
+    margin: 0;
+    text-align: start;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+header .nav h1 span {
+    text-transform: uppercase;
+}
+header .nav .links ul {
+    list-style: none;
+    margin: 0;
+    line-height: 2.6;
+    padding-right: 20px;
+    padding-top: 20px;
+    word-spacing: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+header .nav .links ul li {
+    display: inline-block;
+}
+header .nav .links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.back-G{
+    background-image: linear-gradient(to top,#ea3e2d,#da0846);
+    width: 3000px;
+    height: 800px;
+    transform: rotate(-15deg);
+    z-index: -1;
+    position: absolute;
+    top: -91px;
+    right: -40px;
+}
+header .download {
+    text-align: start;
+    padding-left: 15%;
+    padding-top: 10%;
+    position: relative;
+}
+header .download h2 {
+    font-size: 50px;
+    margin: 0;
+    color: #fff;
+}
+header .download h2::first-letter {
+    text-transform: capitalize;
+}
+header .download p {
+    font-size: 14px;
+    color: #fff;
+}
+header .download p span {
+    font-weight: bold;
+}
+header .download button {
+    background-color: #fff;
+    margin-top: 30px;
+    border-style: none;
+    border-radius: 20px;
+    width: 120px;
+    height: 31px;
+    color: #dc0f43;
+}
+header .download img {
+    position: absolute;
+    top: -30%;
+    right: -5%;
+    transform: scale(.6);
+}
+@media (max-width:750px) {
+    header .download img {
+        right: -25%;
+        transform: scale(0.38);
+        top: -74%;
+    }
+}
+@media (max-width:570px) {
+    header .download img {
+        display: none;
+    }
+}
+
+.easy {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    height: 1000px;
+}
+.easy .easy-m {
+    position: absolute;
+    left: 46%;
+    top: 12%;
+}
+.easy .easy-m h2 {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.easy .easy-m h2::after,
+.easy .keep h2::after {
+    content: ".";
+    color: red;
+    font-size: 40px;
+}
+.easy p {
+    font-size: 11px;
+    font-weight: 100
+}
+.easy .img-1 {
+    transform: scale(0.7);
+    position: absolute;
+    top: -17%;
+    left: 0;
+}
+.easy .img-2 {
+    transform: scale(0.7);
+    position: absolute;
+    right: 0;
+    top: 29%;
+}
+.easy .keep {
+    position: absolute;
+    top: 59%;
+    left: 14%;
+}
+.easy .keep h2 {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bolder;
+}
+@media (max-width:1000px) {
+    .easy .img-1 {
+        transform: scale(0.5);
+        top: -25%;
+        left: -133px;
+    }
+    .easy .easy-m {
+        top: 4%;
+    }
+    .easy .keep {
+        top: 40%;
+        left: 5%;
+    }
+    .easy .img-2 { 
+        transform: scale(0.5);
+        right: -100px;
+        top: 11%;
+    }
+
+}
+@media (max-width:600px) {
+    .easy .img-1 {
+        transform: scale(0.55);
+        top: -39%;
+        right: -36%;
+    }
+    .easy .easy-m {
+        top: 14%;
+        text-align: center;
+        left: 0%;
+    }
+    .easy .keep {
+        top: 64%;
+        text-align: center;
+        left: 0%;
+    }
+    .easy .img-2 { 
+        transform: scale(0.6);
+        right: -36px;
+        top: 11%;
+    }
+
+}
+hr {
+    color: rgba(128, 128, 128, 0.733);
+}
+.say {
+    padding-bottom: 70px;
+}
+.say h2 {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+}
+.say h2::after {
+    content: ".";
+    color: red;
+    font-size: 40px;
+}
+.say .people {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+}
+.say .people .com {
+    border: 2px solid #8080801a;
+    margin-left: 1px;
+}
+.say .people .com:hover .com {
+    box-shadow: 50px 20 10 gray;
+}
+.say .people .com h4 {
+    color: #db0c44;
+}
+.say .people .person {
+    display: flex;
+}
+.say .people img {
+    transform: scale(0.8);
+}
+.say .people p {
+    line-height: 2;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: linear-gradient(to top,#ea3e2d,#da0846);
+    height: 457px;
+}
+@media (max-width:955px) {
+    .title {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding-left: 5%;
+        padding-right: 7%;
+    }
+}
+@media (max-width:768px) {
+    .title {
+        height: 550px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    }
+    .title .g1,
+    .title .g2 {
+        text-align: center !important;
+    }
+    .title .video {
+        display: none;
+    }
+
+}
+.title .g1 {
+    align-self: center;
+    text-align: end;
+    color: #fff;
+    text-transform: capitalize;
+}
+.title .g1 h4::first-letter,
+.title .g2 h4::first-letter {
+    font-size: 20px;
+    margin: 0;
+}
+.title .g1 p,
+.title .g2 p {
+    color: rgba(255, 255, 255, 0.438);
+}
+.title .g2 {
+    align-self: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+.title .video {
+    background-image: url(../img/iPhone\ 7\ Silver1\ copy.png);
+    background-size: cover;
+}
+.subscribe {
+    padding-bottom: 70px;
+}
+.subscribe h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 35px;
+    margin: 0;
+}
+.subscribe h2::after {
+    content: ".";
+    color: red;
+    font-size: 40px;
+}
+.subscribe p {
+    text-align: center;
+    font-size: 4px;
+    color: rgb(156 152 152 / 85%);
+    line-height: 2;
+}
+.subscribe .box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 309px;
+}
+.subscribe .box input {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-top: 20px;
+    width: 143px;
+}
+input[type="Email"] {
+    border: none;
+    border-radius: 25px 0 0 25px;
+    padding: 0 10px;
+    height: 30px;
+    width: 30%;
+    background-color: rgb(161 159 159 / 11%);
+}
+input[type="submit"] {
+    position: relative;
+    background-image: linear-gradient(to top,#ea3e2d,#da0846);
+    right: 12px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 30px;
+    width: 20%;
+    cursor: pointer;
+}
+.download-app {
+    padding-bottom: 100px;
+}
+.download-app center {
+    text-align: center;
+    transform: scaleZ(0.7);
+}
+.download-app h2 {
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+.download-app h2::after {
+    content: ".";
+    color: red;
+    font-size: 40px;
+}
+.download-app p {
+    font-size: 10px;
+    text-align: center;
+    color: rgb(0 0 0 / 29%);
+    padding-bottom: 20px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .link ul {
+    list-style: none;
+    display: inline-flex;
+}
+footer .link ul li {
+    width: fit-content;
+    margin-left: 10px;
+}
+footer .link ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+footer select {
+    display: inline-block;
+    border-style: none;
+    width: 106px;
+    text-transform: uppercase;
+    margin-right: 35px;
+}
+@media (max-width:768px) {
+    footer {
+        justify-content: start;
+    }
+    footer .link ul {
+        padding: 0;
+    }
+    footer .link ul li a {
+        font-size: 10px;
+    }
+    footer select {
+        width: 20%;
+        margin: 0;
+        font-size: 5px;
+
+    }
+}
